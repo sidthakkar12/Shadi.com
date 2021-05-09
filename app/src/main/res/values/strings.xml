@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Shadi</string>
+    <string name="name_s_s_s">%s. %s %s</string>
+    <string name="age_s">Age: %s</string>
+    <string name="email_s">Email: %s</string>
+    <string name="phone_s">Phone: %s</string>
+    <string name="location_s_s_s">Location: %s, %s, %s</string>
+    <string name="s_tap_to_retry">%s\nTap to Retry</string>
+    <string name="member_accepted">Member Accepted</string>
+    <string name="member_declined">Member Declined</string>
+    <string name="no_member_found">No Member Found\nTap to Retry</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="vertical">Vertical</string>
+    <string name="horizontal">Horizontal</string>
+</resources>
