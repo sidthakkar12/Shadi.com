@@ -10,9 +10,8 @@ import com.app.shadi.R
 import com.app.shadi.database.entity.UserEntity
 import com.app.shadi.listener.OnClickListener
 import com.app.shadi.utility.extension.loadImage
-import kotlinx.android.synthetic.main.item_main.view.*
-import kotlinx.android.synthetic.main.item_main_two.view.*
-
+import kotlinx.android.synthetic.main.item_main_vertical.view.*
+import kotlinx.android.synthetic.main.item_main_horizontal.view.*
 
 class MainAdapter(private val users: ArrayList<UserEntity>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
@@ -64,8 +63,8 @@ class MainAdapter(private val users: ArrayList<UserEntity>) : RecyclerView.Adapt
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return when (viewType) {
-            ORIENTATION_VERTICAL -> VerticalViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_main, parent, false))
-            else -> HorizontalViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_main_two, parent, false))
+            ORIENTATION_VERTICAL -> VerticalViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_main_vertical, parent, false))
+            else -> HorizontalViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_main_horizontal, parent, false))
         }
     }
 
